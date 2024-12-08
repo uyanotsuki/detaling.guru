@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Wallpoet&display=swap');
+
+@font-face {
+    font-family: BOWLER;
+    src: url(/src/fonts/ofont.ru_Bowler.ttf);
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+a,
+button {
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 400;
+}
+
+body {
+    /* overflow: hidden; */
+    position: relative;
+    font-family: 'Montserrat';
+    background: #EDEDED;
+}
+
+html, body {
+    overflow-x: hidden; /* Блокирует горизонтальную прокрутку */
+}
+
+.body-lock {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container-auto {
+    max-width: 1810px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+    background: #10141A;
+    border-radius: 4px;
+    transition: all .4s ease-in-out;
+    border: none;
+}

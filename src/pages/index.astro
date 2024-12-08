@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Scene from '../components/Scene.vue';
+import TheHeader from '../components/TheHeader.vue';
+import Catalog from '../components/Catalog.vue';
+import { ref } from 'vue';
+
+const isCatalogVisible = ref(false);
+
+const toggleCatalog = () => {
+  isCatalogVisible.value = !isCatalogVisible.value;
+};
+---
+<Layout title="Detailing.guru">
+	<TheHeader/>
+	<main>
+		<div class="wrapper container-auto">
+			<Catalog/>
+			<Scene client:only />
+		</div>
+	</main>
+</Layout>
+
+<style>
+.wrapper {
+  margin-top: 30px;
+}
+body {
+  overflow: hidden;
+}
+</style>
