@@ -3,7 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import TheRegister from '../components/TheRegister.vue';
 ---
 <Layout title="Detailing.guru">
-        <TheRegister/>
+  <!-- Подключаем компонент с client:only -->
+  <TheRegister client:only="vue" />
 </Layout>
 
 <style scoped>
